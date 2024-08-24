@@ -3,15 +3,14 @@ class Solution {
         int zeros=0;
         int first=0;
         while(first<nums.length){
-          if(nums[first]==0){
+          if(nums[first]!=0){
+              int swap=nums[first];
+               nums[first]=nums[zeros];
+               nums[zeros]=swap;
+              
               zeros++;  
           }
-          else{ 
-                  int swap=nums[first-zeros];
-                  nums[first-zeros]=nums[first];
-                  nums[first]=swap;
-              
-           }
+          
           first++;
         
         }
