@@ -13,7 +13,7 @@ class Solution {
                 }
                 else{
                     sb.append(chars[i]);
-                    sb.append(String.valueOf(count));
+                    sb.append(count);
                 }
                 count=1;
             }
@@ -23,7 +23,7 @@ class Solution {
             }
         else{
                     sb.append(chars[i]);
-                    sb.append(String.valueOf(count));
+                    sb.append(count);
         }
         
         for(int j=0;j<sb.length();j++){
